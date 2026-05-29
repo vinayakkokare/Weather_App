@@ -1,53 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather_App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Weather App</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Add City</a>
-            <a href="#">View Cities</a>
+            <a href="#" onclick="showHome()">Home</a>
+            <a href="#" onclick="showAddCity()">Add City</a>
+            <a href="#" onclick="showViewCities()">View Cities</a>
         </nav>
     </header>
 
     <section class="hero">
         <h2>Welcome to the Weather App</h2>
-        <p>Your one stop shop for all your weather needs!</p>   
+        <p>Your one stop shop for all your weather needs!</p>
     </section>
 
-    <section class="features">
-        <div class="card1">
-           <h2>Current Weather</h2>
-            <section class="weather_info">
-                <p>City: New York</p>
-                <p>Temperature: 25°C</p>
-                <p>Humidity: 60%</p>
-                <p>Wind Speed: 10 km/h</p>
-                <p>Condition: Sunny</p>
-        </section>
-        </div>
+    <section id="home_section">
+        <section class="features">
+            <div class="left_section">
+                <div class="card">
+                    <h3>Location: Mumbai</h3>
+                </div>
 
-        <div class="card2">
-            <h2>7-Day Forcasting</h2>
-             <section class="forecast">
-                <p>Monday: 22°C, Cloudy</p>
-                <p>Tuesday: 24°C, Sunny</p>
-                <p>Wednesday: 20°C, Rainy</p>
-                <p>Thursday: 26°C, Sunny</p>
-                <p>Friday: 23°C, Cloudy</p>
-                <p>Saturday: 21°C, Rainy</p>
-                <p>Sunday: 24°C, Sunny</p>
+                <div class="card1">
+
+                    <h2>Current Weather</h2>
+                    <hr>
+                    <section class="weather_info">
+                        <p>Temperature: 25°C</p>
+                        <p>Humidity: 60%</p>
+                        <p>Wind Speed: 10 km/h</p>
+                        <p>Condition: Sunny</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h2>7-Day Forcasting</h2>
+                <hr>
+                <section class="forecast">
+                    <p>Monday: 22°C, Cloudy</p>
+                    <p>Tuesday: 24°C, Sunny</p>
+                    <p>Wednesday: 20°C, Rainy</p>
+                    <p>Thursday: 26°C, Sunny</p>
+                    <p>Friday: 23°C, Cloudy</p>
+                    <p>Saturday: 21°C, Rainy</p>
+                    <p>Sunday: 24°C, Sunny</p>
+                </section>
+            </div>
         </section>
+    </section>
+
+    <section id="add_city" style="display:none">
+        <div class="addcity">
+
+            <h2>Add New City</h2>
+
+            <form id="Addcityform">
+                <label for="city_name">City Name</label>
+                <input type="text" id="city_name" name="city_name" required>
+                <button type="submit"> Add City</button>
+            </form>
+
         </div>
     </section>
+
+    <section id="view_cities" style="display:none">
+        <div class="viewcities">
+
+        <h2>Saved Cities</h2>
+        <ul id="cities_list">
+        </ul>
+
+        </div>
+
+    </section>
+
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
