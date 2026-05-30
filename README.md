@@ -117,10 +117,7 @@ Through this project I learned:
 
 **Vinayak Kokare**
 
-B.Sc. Computer Science Student  
 Aspiring Software Developer
-
-GitHub: https://github.com/your-github-username
 
 ---
 
