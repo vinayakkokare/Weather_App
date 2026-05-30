@@ -61,19 +61,26 @@ nav a:hover {
     padding: 20px;
 }
 
-.card p {
-    font-size: 18px;
+#location {
+    font-size: 22px;
     font-weight: 500;
-    text-align: start;
+    text-align: center;
     letter-spacing: 1px;
-    margin-left: 10px;
+    padding-left: 70px;
+    color: rgb(245, 246, 247);
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.card h3 {
+#lvalue {
+    letter-spacing: 1px;
     text-align: center;
     padding-top: 10px;
-    color: rgb(5, 176, 250);
+    color: rgb(5, 250, 17);
     font-size: 22px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .card1 {
@@ -98,9 +105,22 @@ nav a:hover {
     margin: 15px 0;
 }
 
+.card2 hr {
+    border: none;
+    height: 2px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 15px 0;
+}
 .weather_info {
-    text-align: center;
+    text-align: start;
+    color: rgb(255, 217, 3);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
+    
 }
 
 .card2 {
@@ -124,7 +144,7 @@ nav a:hover {
 }
 
 .forecast p {
-    color: rgb(255, 217, 3);
+    color: rgb(236, 253, 0);
     font-size: 18px;
     font-weight: 500;
     text-align: start;
@@ -134,12 +154,7 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.card2 hr {
-    border: none;f
-    height: 2px;
-    background-color: rgba(0,0,0,0.2);
-    margin: 15px 0;
-}
+
 
 #add_city{
     display: flex;
@@ -203,16 +218,28 @@ nav a:hover {
 }
 
 #cities_list li:hover{
-    background-color: rgb(7, 255, 251);
+    background-color: rgb(5, 255, 9);
 }
 
-.weather_info p {
-    color : rgb(255, 217, 3);
+#temperature, #humidity, #wind, #condition {
+    color : rgb(236, 253, 0);
     font-size: 20px;
     font-weight: 500;
     text-align: start;
     letter-spacing: 1px;
-    margin-left: 65px;
+    margin-left: 45px;
     margin-bottom: 20px;
     margin-top: 30px;
+}   
+
+#tvalue, #hvalue, #wvalue, #cvalue {
+    color : rgb(5, 255, 163);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
 }   

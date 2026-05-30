@@ -70,11 +70,11 @@ function loadWeather(city) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            document.getElementById("location").textContent = `Location: ${data.location.name}`;
-            document.getElementById("temperature").textContent = `Temperature: ${data.current.temp_c}°C`;
-            document.getElementById("humidity").textContent = `Humidity: ${data.current.humidity}%`;
-            document.getElementById("wind").textContent = `Wind Speed: ${data.current.wind_kph} km/h`;
-            document.getElementById("condition").textContent = `Condition: ${data.current.condition.text}`;
+            document.getElementById("lvalue").textContent = `${data.location.name}`;
+            document.getElementById("tvalue").textContent = `${data.current.temp_c}°C`;
+            document.getElementById("hvalue").textContent = `${data.current.humidity}%`;
+            document.getElementById("wvalue").textContent = `${data.current.wind_kph} km/h`;
+            document.getElementById("cvalue").textContent = `${data.current.condition.text}`;
         });
 
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`)
