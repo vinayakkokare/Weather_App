@@ -45,7 +45,7 @@ This Weather App allows users to search and save cities, view current weather co
 
 ### Duplicate City Alert
 
-![Alert](Screenshots/Already_Added_City_Alert.png)
+![Alert](Screenshots/Already_Added_City_Aleart.png)
 
 ---
 
